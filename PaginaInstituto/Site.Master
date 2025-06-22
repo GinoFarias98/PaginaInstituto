@@ -12,63 +12,57 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        
-        <div class="d-flex">
-            <!-- Sidebar -->
-            <div id="sidebar" class="bg-dark text-white vh-100 p-3 sidebar d-flex flex-column justify-content-between">
-                <!-- Logo y Toggle -->
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <div class="d-flex align-items-center">
-                        <img src="/img/LogoITSC.png" class="logo me-2" alt="IT Logo" />
-                    </div>
-                    
-                        <button class="btn btn-sm btn-outline-light toggle-btn" type="button">☰</button>
-                    
-                </div>
 
-                <!-- Menú -->
-                <ul class="nav flex-column gap-2 menu" id="menu-links">
-                    <li class="nav-item">
-                        <a class="nav-link text-white d-flex align-items-center" href="/vistas/Home.aspx">
-                            <i class="bi bi-house me-2"></i><span class="link-text">Inicio</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white d-flex align-items-center" href="/Vistas/Carreras.aspx">
-                            <i class="bi bi-mortarboard me-2"></i><span class="link-text">Carreras</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white d-flex align-items-center" href="/Vistas/RequisitosMatriculacion.aspx">
-                            <i class="bi bi-file-earmark-text me-2"></i><span class="link-text">Requisitos</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white d-flex align-items-center" href="/Vistas/OfertaAcademica.aspx">
-                            <i class="bi bi-calendar3 me-2"></i><span class="link-text">Oferta 2025</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white d-flex align-items-center" href="/Vistas/PreguntasFrecuentes.aspx">
-                            <i class="bi bi-question-circle me-2"></i><span class="link-text">Preguntas</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white d-flex align-items-center" href="/Vistas/Contacto.aspx">
-                            <i class="bi bi-envelope me-2"></i><span class="link-text">Contactos</span>
-                        </a>
-                    </li>
-                </ul>
+        <!-- Sidebar -->
+        <div id="sidebar" class="bg-dark text-white vh-100 sidebar d-flex flex-column">
+            <!-- Logo y toggle button -->
+            <div class="sidebar-header d-flex align-items-center px-2 py-2">
+                <img src="/img/LogoITSC.png" class="logo me-auto" alt="IT Logo" />
+                <button class="toggle-btn ms-2" type="button">☰</button>
             </div>
 
-            <!-- Contenido principal -->
-            <div class="content flex-grow-1 p-4" id="main-content">
-                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
-            </div>
+            <!-- Menú -->
+            <ul class="nav flex-column gap-2 menu px-2" id="menu-links">
+                <li class="nav-item">
+                    <a class="nav-link text-white d-flex align-items-center" href="/vistas/Home.aspx">
+                        <i class="bi bi-house"></i><span class="link-text ms-2">Inicio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white d-flex align-items-center" href="/Vistas/Carreras.aspx">
+                        <i class="bi bi-mortarboard"></i><span class="link-text ms-2">Carreras</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white d-flex align-items-center" href="/Vistas/RequisitosMatriculacion.aspx">
+                        <i class="bi bi-file-earmark-text"></i><span class="link-text ms-2">Requisitos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white d-flex align-items-center" href="/Vistas/OfertaAcademica.aspx">
+                        <i class="bi bi-calendar3"></i><span class="link-text ms-2">Oferta 2025</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white d-flex align-items-center" href="/Vistas/PreguntasFrecuentes.aspx">
+                        <i class="bi bi-question-circle"></i><span class="link-text ms-2">Preguntas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white d-flex align-items-center" href="/Vistas/Contacto.aspx">
+                        <i class="bi bi-envelope"></i><span class="link-text ms-2">Contactos</span>
+                    </a>
+                </li>
+            </ul>
         </div>
+
+        <!-- Contenido principal -->
+        <div class="content flex-grow-1 p-4" id="main-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        
     </form>
 
     <script src="/Scripts/CollapseButton.js"></script>
-
 </body>
 </html>
