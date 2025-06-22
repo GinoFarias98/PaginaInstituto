@@ -67,6 +67,24 @@
     object-fit: contain;
 }
 
+/* Mostrar solo el logo expandido por defecto */
+.logo-expandido {
+    display: block;
+}
+
+.logo-colapsado {
+    display: none;
+}
+
+/* Cuando se colapsa el sidebar */
+.sidebar.collapsed .logo-expandido {
+    display: none;
+}
+
+.sidebar.collapsed .logo-colapsado {
+    display: block;
+}
+
 .sidebar.collapsed .sidebar-logo {
     display: flex;
     justify-content: center;
@@ -147,4 +165,23 @@
     opacity: 0.20;
     z-index: 0;
     pointer-events: none;
+}
+
+.logo-expandido {
+    width: 140px;
+    height: 80px; /* por ejemplo */
+    object-fit: fill; /* ← fuerza a que ocupe todo el tamaño */
+    display: block;
+    margin: 0 auto;
+}
+
+.sidebar.collapsed .logo-expandido {
+    width: 0;
+}
+
+.logo-colapsado {
+    width: 45px !important;
+    height: 45px !important;
+    object-fit: fill;
+    transition: width 0.3s ease;
 }

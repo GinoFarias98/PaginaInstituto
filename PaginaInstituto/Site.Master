@@ -21,7 +21,8 @@
 
             <!-- Logo aparte -->
             <div class="sidebar-logo text-center my-2">
-                <img src="/img/LogoInstitutoEscrito.png" class="logo" alt="IT Logo" />
+                <img src="/img/LogoInstitutoEscrito.png" class="logo logo-expandido" alt="Logo escrito" />
+                <img src="/img/LogoITSC.png" class="logo logo-colapsado" alt="Logo compacto" />
             </div>
 
             <!-- Menú -->
