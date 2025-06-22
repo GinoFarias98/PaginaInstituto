@@ -122,9 +122,29 @@
 .content {
     margin-left: 200px;
     padding: 20px;
+    position: relative;
     transition: margin-left 0.3s ease;
 }
 
 .sidebar.collapsed ~ .content {
     margin-left: 60px;
+}
+
+
+/* Marca de agua */
+
+.marca-de-agua {
+    position: absolute;
+    top: calc(300px + 50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px; /* ← altura fija */
+    background-image: url('/img/LogoITSC.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.20;
+    z-index: 0;
+    pointer-events: none;
 }
