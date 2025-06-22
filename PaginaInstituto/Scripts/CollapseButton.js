@@ -16,6 +16,11 @@
         link.addEventListener("click", function (e) {
             // No hacemos nada con sidebar al hacer clic
             // Esto previene efectos colaterales no deseados
+
+
+            // en realidad no se puede sin agregar logica por qu eal presionar sobre un nav link se re renderiza la pagina.
+            // habria que generar clases que guarden estados. 
+
         });
     });
 });
