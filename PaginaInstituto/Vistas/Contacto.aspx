@@ -2,4 +2,5 @@
 
 <asp:content ID="idContacto" ContentPlaceHolderId="MainContent" runat="server">
     <p>Contacto</p>
+    <div>hola</div>
     </asp:content>
