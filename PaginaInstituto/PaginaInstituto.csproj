@@ -117,6 +117,9 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Estilos\contacto.css" />
+    <Content Include="Estilos\oferta.css" />
+    <Content Include="Estilos\faq.css" />
     <Content Include="Estilos\EstilosNavBar.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
